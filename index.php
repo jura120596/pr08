@@ -4,6 +4,17 @@
 </form>
 <?php 
 if (isset($_POST['sub'])){
-echo $_POST['sub'].'pr08.iktiscloud.ru'; 
+	$sub = $_POST['sub']
+	echo $sub.'pr08.iktiscloud.ru'; 
+	if (!file_exists($sub)) {
+		mkdir($sub , 0777, true);
+	}else{
+		echo 'sub domain exists';
+	}
+	$file = 'index.php2';
+	$newfile = $sub.'/index.php';
+	if (!copy($file, $newfile)) {
+		echo "can't create folder for new subdomain";
+}
 }
 ?>
