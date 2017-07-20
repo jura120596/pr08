@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^$
+RewriteCond %{HTTP_HOST} !^(www\.)?host\.com$ [NC]
+RewriteCond %{HTTP_HOST}---%{REQUEST_URI} ^([^\.]+)\.host\.com---/([^/]+)? [NC]
+RewriteCond %1---%2 !^(.*)---\1$ [NC]
+RewriteCond %{DOCUMENT_ROOT}/%1/ -d
+RewriteRule ^(.*)?$ %1/$1 [QSA,PT]
