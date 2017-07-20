@@ -1,5 +1,5 @@
 <form action="" method="post">
- <p>Даун: <input type="text" name="sub" /></p>
+ <p>Поддомен: <input type="text" name="sub" /></p>
  <p><input type="submit" /></p>
 </form>
 <?php 
