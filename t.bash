@@ -1,5 +1,6 @@
 #!/bin/bash
 name=$1
+echo `date`
 declare name=$name
 declare cname=$name".azurewebsites.net"
 declare mhostname="$name.pr08.itiscloud.ru"
