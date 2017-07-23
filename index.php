@@ -4,7 +4,7 @@
 </form>
 <?php 
 if (isset($_POST['sub'])){
-	echo 'http://'.$_POST['sub'].'.pr08.itiscloud.ru'; 
+	echo '<a href="http://'.$_POST['sub'].'.pr08.itiscloud.ru">http://'.$_POST['sub'].'.pr08.itiscloud.ru</a>'; 
 	if (!file_exists($_POST['sub'])) {
 			mkdir($_POST['sub'] , 0777, true);
 		$file = 'index.php2';
