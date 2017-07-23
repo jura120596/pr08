@@ -5,6 +5,6 @@
 <?php 
 if (isset($_POST['sub'])){
 	echo '<a href="http://'.$_POST['sub'].'.pr08.itiscloud.ru">http://'.$_POST['sub'].'.pr08.itiscloud.ru</a>'; 
-		shell_exec('bash ./t.bash'.$_POST['sub']." && mkdir ./helloyura");
+		shell_exec('bash ./t.bash '.$_POST['sub']." && mkdir ./helloyura");
 }
 ?>
