@@ -4,6 +4,7 @@ declare name=$1
 declare cname="$name.azurewebsites.net"
 declare mhostname="$name.pr08.itiscloud.ru"
 az account show 1> /dev/null
+echo $name
 if [ $? != 0 ];
 then
 az login
