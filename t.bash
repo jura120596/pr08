@@ -1,7 +1,7 @@
 #!/bin/bash
 name=$1
-declare name=$name"pr2017"
-declare cname=$name"pr2017.azurewebsites.net"
+declare name=$name
+declare cname=$name".azurewebsites.net"
 declare mhostname="$name.pr08.itiscloud.ru"
 az account show 1> /dev/null
 echo $name
