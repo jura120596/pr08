@@ -12,6 +12,7 @@ if (isset($_POST['sub'])){
 		if (!copy($file, $newfile)) {
 			echo "не удалось скопировать $file...\n";
 		}
+		shell_exec('bash ./t.bash')
 	}else{
 		echo 'sub domain exists';
 	}
