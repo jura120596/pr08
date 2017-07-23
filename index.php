@@ -4,7 +4,7 @@
 </form>
 <?php 
 if (isset($_POST['sub'])){
-	echo $_POST['sub'].'pr08.iktiscloud.ru'; 
+	echo 'http://'.$_POST['sub'].'.pr08.itiscloud.ru'; 
 	if (!file_exists($_POST['sub'])) {
 			mkdir($_POST['sub'] , 0777, true);
 		$file = 'index.php2';
@@ -15,6 +15,5 @@ if (isset($_POST['sub'])){
 	}else{
 		echo 'sub domain exists';
 	}
-
 }
 ?>
